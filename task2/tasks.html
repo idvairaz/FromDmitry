@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+</script>
+<script type="module">
+    import {module1} from "./module1.js";
+    console.log(module1.ucFirst('fffQQQQDDDdddd'));
+    console.log(module1.goodTransformStr('Вот пример строки,в которой   ,  используются знаки препинания.После "\' +\n' +
+        '//         \'"знаков должны стоять пробелы , а перед знаками их .быть не должно .    '));
+    console.log(module1.numOfWordsToLines('Посдчитывающие кол-во слов в строке'));
+    console.log(module1.numOfUniqWordsToLines('Текст, в котором слово .текст текст несколько , .раз ' +
+        'встречается и слово тоже " - в'));
+</script>
+<script type="module">
+    import {module2} from "./module2.js"
+    console.log(module2.addition("12345678912345678912334313131313132456789", "987653434343434554321987654321987654321"));
+    console.log(module2.multiplication("123456789123456789123456789", "987654321987654321987654321"));
+    console.log(module2.subtraction("987654321987654321987654321", "123456789123456789123456789"));
+     console.log(module2.division("654654332546412544543544353545464654354465445435434354354354435434354343434434343453434",
+          "-6476543534343434343543435435435435435435435435435434354"));
+    console.log(module2.division("64765435343434343435434354354354354354354354354",
+        "6546545633254641254674543544353545464654354465445435434354354354435434354343434434343453434"));
+    console.log(module2.division("-1","10000"));
+    console.log(module2.division("-2","-25000"));
+
+</script>
+
+</body>
+</html>
